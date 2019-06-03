@@ -1,0 +1,19 @@
+{
+  "name": "gdg-lit-html-part-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": " http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lit-html": "^1.1.0",
+    "todomvc-app-css": "^2.2.0",
+    "todomvc-common": "^1.0.5"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
