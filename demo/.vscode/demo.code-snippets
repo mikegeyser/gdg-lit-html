@@ -1,0 +1,93 @@
+{
+  "HTML for initial app": {
+    "scope": "",
+    "prefix": "_html_app",
+    "body": [
+      "<section class=\"todoapp\">",
+      "  <header class=\"header\">",
+      "    <h1>todos</h1>",
+      "  </header>",
+      "",
+      "  <section class=\"main\"></section>",
+      "</section>"
+    ],
+    "description": "HTML for initial app"
+  },
+  "HTML for add todo": {
+    "scope": "",
+    "prefix": "_html_add_todo",
+    "body": ["<input class=\"new-todo\" placeholder=\"What needs to be done?\" autofocus=\"\" />"],
+    "description": "HTML for add todo"
+  },
+  "Code for handling the keyup event": {
+    "scope": "",
+    "prefix": "_handleAddTodo",
+    "body": [
+      "let handleAddTodo = (e) => {",
+      "  if (e.key !== 'Enter') return;",
+      "",
+      "  todos.push({",
+      "    title: e.target.value,",
+      "    completed: false",
+      "  });",
+      "",
+      "  e.target.value = '';",
+      "",
+      "  update();",
+      "};"
+    ],
+    "description": "Code for handling the keyup event"
+  },
+  "Data for the initial list": {
+    "scope": "",
+    "prefix": "_data",
+    "body": [
+      "{ title: 'Initialise the app', completed: true },",
+      "{ title: 'Create a todo', completed: true },",
+      "{ title: 'List the todos', completed: true },",
+      "{ title: 'Mark a todo as completed', completed: false },",
+      "{ title: '????', completed: false },",
+      "{ title: 'Profit!', completed: false },"
+    ],
+    "description": "Data for the initial list"
+  },
+  "HTML for view todo": {
+    "scope": "",
+    "prefix": "_html_view_todo",
+    "body": [
+      "<li>",
+      "  <div class=\"view\">",
+      "    <input class=\"toggle\" type=\"checkbox\" />",
+      "    <label></label>",
+      "  </div>",
+      "</li>"
+    ],
+    "description": "HTML for view todo"
+  },
+  "Create a LitElement component": {
+    "scope": "",
+    "prefix": "_component",
+    "body": [
+      "import { html, LitElement } from 'lit-element';",
+      "",
+      "class ${1:ClassName} extends LitElement {",
+      "",
+      "    createRenderRoot() {",
+      "      return this;",
+      "    }",
+      "",
+      "    static get properties() {",
+      "        return {",
+      "        };",
+      "    }",
+      "",
+      "    render() {",
+      "        return html``;",
+      "    }",
+      "",
+      "}",
+      "",
+      "window.customElements.define('${2:element-name}', ${1:ClassName});"
+    ]
+  }
+}

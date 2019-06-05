@@ -64,7 +64,7 @@ let app = () => html``;
 render(app(), document.body);
 ```
 
-> Snippet:
+> Snippet: _html_app
 
 ```html
 <section class="todoapp">
@@ -82,7 +82,7 @@ render(app(), document.body);
 let addTodo = () => html``;
 ```
 
-> Snippet:
+> Snippet: _html_add_todo
 
 ```html
 <input class="new-todo" placeholder="What needs to be done?" autofocus="" />
@@ -96,7 +96,7 @@ ${addTodo()}
 @keyup="${handleAddTodo}"
 ```
 
-> Snippet:
+> Snippet: _handleAddTodo
 
 ```js
 let handleAddTodo = (e) => {
@@ -120,7 +120,7 @@ update();
 
 # 6. Show the list
 
-> Snippet:
+> Snippet: _data
 
 ```js
   { title: 'Initialise the app', completed: true },
@@ -141,7 +141,7 @@ update();
 let viewTodo = (todo) => html``;
 ```
 
-> Snippet:
+> Snippet: _html_view_todo
 
 ```html
 <li>
@@ -159,7 +159,8 @@ let viewTodo = (todo) => html``;
 # 7. Mark a todo as done
 
 ```html
-?checked="${todo.completed}" @click=${(e) => handleToggleCompleted(todo)}
+?checked="${todo.completed}" 
+@click=${(e) => handleToggleCompleted(todo)}
 ```
 
 ```js
@@ -204,7 +205,7 @@ let handleToggleCompleted = (todo) =>
 import { html, LitElement } from 'lit-element';
 ```
 
-> Snippet:
+> Snippet: _component
 
 ```js
 class App extends LitElement {
@@ -251,7 +252,7 @@ return {
 
 > Create file `add-todo.js`.
 
-> Snippet:
+> Snippet: _component
 
 ```js
 import { html, LitElement } from 'lit-element';
@@ -322,7 +323,7 @@ import './add-todo.js';
 
 Create `view-todo.js`.
 
-> Snippet
+> Snippet: _component
 
 ```js
 import { html, LitElement } from 'lit-element';
