@@ -15,7 +15,7 @@
     "todomvc-common": "^1.0.5"
   },
   "devDependencies": {
-    "http-server": "^0.11.1",
+    "http-server": "^0.11.2",
     "owc-dev-server": "^0.4.3"
   }
 }
